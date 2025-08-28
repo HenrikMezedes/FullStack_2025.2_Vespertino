@@ -1,0 +1,53 @@
+p{
+    box-shadow: 5px 5px rgb(128, 128, 128);
+    border-radius: 20px;
+    display: inline;
+}
+
+.doted{
+    border-style: dashed
+    
+}
+
+.solid{
+    border-style: solid 
+}
+
+.double{
+    border-style: double
+}
+
+#d1{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-style: solid
+    pedding: 20px;
+   
+
+
+}  
+
+.azul{
+    background-color: aqua;
+
+}
+
+.padding{
+
+    padding: 10px
+}
+
+#d2{
+inline-size: none;  
+}
+
+.vermelho{
+    background-color: red;
+}
+
+#id5{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
