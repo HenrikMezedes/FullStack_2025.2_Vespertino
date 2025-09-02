@@ -1,8 +1,139 @@
 body{
     background-color: lightgrey;
+    
 }
-
-.comeco{
+h1{
+    color: darkgreen;
+}
+.comeco {
+    border-style: solid;
+    background-color: bisque ;
     border-color: darkblue;
+    position: relative;
+    padding: 50px;
+    text-align: center;
+   
 
 }
+
+.comeco .java{
+    position: absolute;
+    right: 5px;
+    bottom: 45px;
+}
+
+   
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: lightskyblue;
+    padding: 15px;
+
+
+
+
+}
+
+.texto{
+    text-align: center ;
+    color: indigo;
+    font-size: 20pt;
+
+
+}
+
+h2{
+    text-align: center;
+}
+
+
+#c{
+    position: absolute;
+    
+    bottom: 40px;
+    left: 10px;
+
+}
+
+
+.livros {
+  display: flex;            
+  justify-content: center;    
+  gap: 60px;                 
+  margin: 20px 0;           
+}  
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.contatos{
+    
+      width: 25%; /* Ou qualquer outra largura menor que a do contêiner */
+      margin-left: auto;
+      margin-right: auto;
+    border: 5px dashed red;
+    
+    
+
+}
+
+th{
+    color: red;
+}
+
+.links{
+    margin: 10px auto ;
+    width: 30%;
+    background-color: yellow;
+    padding: 10px;
+    text-align: left;
+    
+   
+
+}
+
+.rodape{
+    background-color: bisque;    
+    position: relative;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.rodape p {
+    
+    font-family: "Comic Sans MS", cursive;
+    font-size: 15pt
+}
+.rodape .html{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
+}
+
+.rodape .css{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
