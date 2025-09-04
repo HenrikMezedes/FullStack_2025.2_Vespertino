@@ -75,7 +75,7 @@ h2{
 
 .contatos{
     
-      width: 25%; /* Ou qualquer outra largura menor que a do contêiner */
+      width: 25%; 
       margin-left: auto;
       margin-right: auto;
     border: 5px dashed red;

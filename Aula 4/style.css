@@ -1,0 +1,36 @@
+#container{
+    height: 400px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+
+.itens{
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+#d5{
+    order: 1;
+
+}
+
+#d7{
+    order: -1;
+    flex-grow: 3;
+}
+
+#d8{
+    flex-basis: 100px
+}
+
+#d13{
+    align-self: start;
+}
