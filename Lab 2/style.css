@@ -10,3 +10,32 @@ body{
 
     font-size: 20px;
 }
+
+.foto{
+    position: relative;    
+    left: 650px;    
+    border-radius: 100px;   
+    border-style: solid
+    
+}
+
+#para{  
+    font-size: 15pt;
+    position: relative;
+    left: 630px;
+        
+}
+
+.linguagens{
+   margin: 10px auto ;
+    width: 30%;
+    border-style: solid;
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+}   
+
+a:hover{
+    color: blue;
+}
+ 
