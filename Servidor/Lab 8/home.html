@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Área dos formulários -->
+        <div class="form-container" id="form-container">
+            
+            <!-- Formulário de Login -->
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="/logar_usuario" method="post">
+                    <div class="input-group">
+                        <label for="login">Login:</label>
+                        <input type="text" id="login" name="login" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <button type="submit" class="btn">Entrar</button>
+                    <p class="trocar-form">
+                        Ainda não tem conta? <a href="#" id="btn-cadastro">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <div class="form-box cadastro">
+                <h2>Cadastro</h2>
+                <form action="/cadastrar_usuario" method="post">
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-cad">Login:</label>
+                        <input type="text" id="login-cad" name="login" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="senha-cad">Senha:</label>
+                        <input type="password" id="senha-cad" name="senha" required>
+                    </div>
+                    <button type="submit" class="btn">Cadastrar</button>
+                    <p class="trocar-form">
+                        Já tem conta? <a href="#" id="btn-login">Fazer login</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('form-container');
+        const btnCadastro = document.getElementById('btn-cadastro');
+        const btnLogin = document.getElementById('btn-login');
+
+        btnCadastro.addEventListener('click', () => {
+            container.classList.add('mostrar-cadastro');
+        });
+
+        btnLogin.addEventListener('click', () => {
+            container.classList.remove('mostrar-cadastro');
+        });
+    </script>
+</body>
+</html>

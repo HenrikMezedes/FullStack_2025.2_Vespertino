@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tabela Centralizada - 10 Linhas</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f8fafc 0%, #eaeef7 100%);
+    }
+
+    /* Centraliza a tabela na tela */
+    .page {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* Caixa da tabela */
+    .card {
+      width: 100%;
+      max-width: 800px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+
+    .card-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid #ddd;
+      font-weight: bold;
+      background-color: #f3f4f6;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      text-align: left;
+      padding: 12px 16px;
+      background-color: #f9fafb;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f8faff;
+    }
+
+    tbody tr:hover {
+      background-color: #e7f0ff;
+      transition: 0.2s;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .card-footer {
+      padding: 10px 16px;
+      font-size: 13px;
+      color: #555;
+      text-align: right;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <div class="card-header">Atividades</div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Lab 1</td><td><a href="../Lab 1/index.html">Acessar Lab 1</a></td></tr>
+          <tr><td>2</td><td>Lab 2</td><td><a href="../Lab 2/projects.html">Acessar Lab 2</a></td></tr>
+          <tr><td>3</td><td>Lab 3</td><td><a href="../Lab 3/index.html">Acessar Lab 3</a></td></tr>
+          <tr><td>4</td><td>Lab 4</td><td><a href="../Lab 4/guess.html">Acessar Lab 4</a></td></tr>
+          <tr><td>5</td><td>Lab 5</td><td><a href="../Lab 5/canvas.html">Acessar Lab 5</a></td></tr>
+          <tr><td>6</td><td>Lab 6</td><td><a href="../Lab_6/index.html">Acessar Lab 6</a></td></tr>
+          <tr><td>7</td><td>Lab 7</td><td><a href="../index.html">Acessar Lab 7</a></td></tr>
+          <tr><td>8</td><td>Lab 8</td><td></td></tr>
+          <tr><td>9</td><td>Lab 9</td><td>-</td></tr>
+          <tr><td>10</td><td>Lab 10</td><td>-</td></tr>
+        </tbody>
+      
+    </div>
+  </div>
+</body>
+</html>

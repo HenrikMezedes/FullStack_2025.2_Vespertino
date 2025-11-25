@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    height: 50%;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.form-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Exibe o login por padrão */
+.form-box.login {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Quando classe mostrar-cadastro estiver ativa */
+.form-container.mostrar-cadastro .login {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.form-container.mostrar-cadastro .cadastro {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+
+.form-box.cadastro {
+    transform: translateX(100%);
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* ======= BOTÕES ======= */
+.btn {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
+
+/* ======= TROCAR FORM ======= */
+.trocar-form {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.trocar-form a {
+    color: #9333ea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.trocar-form a:hover {
+    text-decoration: underline;
+}

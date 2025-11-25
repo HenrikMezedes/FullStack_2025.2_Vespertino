@@ -1,0 +1,27 @@
+{
+  "name": "servidor",
+  "version": "0.1.0",
+  "description": "Meu priemeiro projeto FullSatck",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenrikMezedes/FullStack_2025.2_Vespertino.git"
+  },
+  "keywords": [
+    "servidor"
+  ],
+  "author": "Henrik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenrikMezedes/FullStack_2025.2_Vespertino/issues"
+  },
+  "homepage": "https://github.com/HenrikMezedes/FullStack_2025.2_Vespertino#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "4.1"
+  }
+}
